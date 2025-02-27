@@ -1,0 +1,71 @@
+/*Estilização do BODY do site*/
+body {
+    margin: 0;
+    border: 0;
+    font-family: 'Cambria';
+}
+.logo {
+    width: 9%;
+    margin: 5px;
+}
+/*Estilização do header do site*/
+header {
+    background-color: rgb(66, 80, 80);
+}
+/*Estilização da DIV do header*/
+.divHeader {
+    position: relative;
+    margin: auto;
+    padding-bottom: 80px;
+
+}
+/*Estilização do MENU do site*/
+nav {
+    position: absolute;
+    top: 35px;
+    right: 100;
+}
+nav li {
+    display: inline;
+    color: white;
+    font-size: 20;
+    margin-right: 130;
+}
+/*Banner do Site*/
+.banner {
+    width: 100%;
+    height: 320;
+    object-fit: cover;
+}
+/*imagem minha e do meu pai + TEXTO*/
+.img_sobrenos {
+    width: 25%;
+    float: left;
+    
+
+}
+.fundohistoria {
+    background:linear-gradient(#ffffff, #6adbd6,#838f8d,#39474a);
+    
+}
+.titulo_sobrenos {
+    margin: 30;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    font-size: 20;
+    font-family: 'Cambria';
+}
+/*Estilização da sessão NOSSO ESTABELECIMENTO*/
+.mapaGeral {
+    background:linear-gradient();
+   
+}
+.mapaGeral {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Cambria';
+}
+.mapa {
+
+}
