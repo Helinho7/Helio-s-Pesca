@@ -50,7 +50,7 @@ nav li {
 }
 
 .titulo_sobrenos {
-    margin: 30;
+    margin: 50;
     text-align: center;
     width: 70%;
     margin-left: 15%;
@@ -69,21 +69,42 @@ nav li {
     color: red;
     font-size: 20;
 }
-
-.NossosProdutos {
+.nossosprodutos {
+    padding: 2%;
     text-align: center;
-    color: red;
-    text-decoration: underline;
     font-size: 20;
 }
-.imgNossosProdutos {
-    width: 25%;
-    float: center;
-    margin-right: 15;
+.div_nossosprodutos{
+    width: 70%;
+    margin-left: 10%;
 }
-.Produtos {
+.lista_nossosprodutos{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+}
+.lista_nossosprodutos li{
+    line-height: 2;
+}
+.lista_nossosprodutos li:before{
+    content: "» ";
+}
+.img_Produtos{
+    width: 20%;
+    border-radius: 8px;
+}
+.img_Produtos:hover{
+    opacity: 0.8;
+}
+.video{
+    padding: 5% 0 0 0%;
+}
+
+
+
+
+
+
     
-    margin-left: 200;
-    text-align: justify;  
-    color: white;
-}
+    
