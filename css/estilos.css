@@ -10,7 +10,7 @@ body {
 }
 /*Estilização do header do site*/
 header {
-    background-color: rgb(66, 80, 80);
+    background-color: #5271ff;
 }
 /*Estilização da DIV do header*/
 .divHeader {
@@ -34,18 +34,19 @@ nav li {
 /*Banner do Site*/
 .banner {
     width: 100%;
-    height: 320;
+    height: 370;
     object-fit: cover;
 }
 /*imagem minha e do meu pai + TEXTO*/
-.img_sobrenos {
+.img_sobrenos {  
     width: 25%;
     float: left;
     
 
 }
 .fundohistoria {
-    background:linear-gradient(#ffffff, #6adbd6,#838f8d,#39474a);
+    padding: 4;
+    background:linear-gradient(#ffedff,#e0a1ff,#b680f8,#8d5ff1,#633dea,#391ce2);
     
 }
 
@@ -70,8 +71,9 @@ nav li {
     font-size: 20;
 }
 .nossosprodutos {
-    padding: 2%;
+    padding: 1%;
     text-align: center;
+    color: #092442;
     font-size: 20;
 }
 .div_nossosprodutos{
@@ -79,20 +81,26 @@ nav li {
     margin-left: 10%;
 }
 .lista_nossosprodutos{
-    width: 30%;
+    width: 40%;
+    color: white;
     display: inline-block;
     vertical-align: top;
     list-style: none;
+    
 }
 .lista_nossosprodutos li{
     line-height: 2;
 }
 .lista_nossosprodutos li:before{
-    content: "» ";
+    content: "≈ ";
 }
 .img_Produtos{
-    width: 20%;
+    width: 30%;
     border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px white;
+    opacity: 1;
+    transition: 100ms;
+
 }
 .img_Produtos:hover{
     opacity: 0.8;
