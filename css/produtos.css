@@ -1,0 +1,356 @@
+/*cabeçalho do site*/
+body {
+    margin: 0;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+body a{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20;
+
+}
+body li{
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20;
+}
+.logo {
+    width: 9%;
+    margin: 5px;
+}
+/*Estilização do header do site*/
+header {
+    background-color: #042138 ;
+    
+}
+/*Estilização da DIV do header*/
+.divHeader {
+    position: relative;
+    margin: auto;
+    padding-bottom: 80px;
+
+}
+/*Estilização do MENU do site*/
+nav {
+    position: absolute;
+    top: 35px;
+    right: 100;
+}
+nav li {
+    display: inline;
+    color: white;
+    font-size: 20;
+    margin-right: 130;
+}
+/*cabeçalho do site acima*/
+.titulo_produtos{
+    color: #042138 ;
+    margin: 50;
+    text-align: center;
+    width: 70%;
+    margin-left: 14%;
+    font-size: 20;
+    font-family: 'Cambria';
+}
+.texto_produtos{
+    font-family: "Open Sans", sans-serif;
+}
+/*Banner Frete Grátis*/
+.banner {
+    width: 100%;
+    height: 370;
+    object-fit: cover;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.card{
+    background: #fff;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,4);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1465bb;
+}
+/*---------------------*/
+.card1{
+    background: #fff;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,4);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.card1:hover{
+    transform: scale(1.05);
+}
+.card1 img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card1 h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1465bb;
+}
+/*---------------------*/
+.card2{
+    background: #fff;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,4);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.card2:hover{
+    transform: scale(1.05);
+}
+.card2 img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card2 h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1465bb;
+}
+/*---------------------*/
+.card3{
+    background: #fff;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,4);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.card3:hover{
+    transform: scale(1.05);
+}
+.card3 img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card3 h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1465bb;
+}
+/*---------------------*/
+.card4{
+    background: #fff;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,4);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.card4:hover{
+    transform: scale(1.05);
+}
+.card4 img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card4 h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1465bb;
+}
+/*---------------------*/
+.card5{
+    background: #fff;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,4);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.card5:hover{
+    transform: scale(1.05);
+}
+.card5 img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card5 h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1465bb;
+}
+/*--------------------------*/
+.card6{
+    background: #fff;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,4);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.card6:hover{
+    transform: scale(1.05);
+}
+.card6 img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card6 h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1465bb;
+}
+/*--------------------------*/
+.card7{
+    background: #fff;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,4);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.card7:hover{
+    transform: scale(1.05);
+}
+.card7 img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card7 h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1465bb;
+}
+/*--------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*rodapé do site*/
+footer{
+    background: url("../img/rodape.png");/*imagem do rodapé*/
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+    padding: 0% 5% 1px 0%;
+    
+}
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+
+}
+footer i {
+    color: white;
+}
+.logo_footer {
+    width: 7%;
+    padding-left: 90%;
+    
+}
+/*rodapé do site acima*/

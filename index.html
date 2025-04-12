@@ -2,9 +2,19 @@
     <head>
         <!-- esse estilo seria para aumentar ou diminuir a logo puxando do estilos.css -->
         <link href="css/estilos.css" rel="stylesheet">  
+        <!--Biblioteca para chamar o símbolo do whats-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <meta charset="UTF-8"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
         <title>Helio's Pesca</title>
     </head>
+    <!--fundo site-->
+    <Body background="img/fundo.png"></Body>
     <body>
        <header>
         <div divHeader="css/estilos.css">
@@ -15,13 +25,13 @@
             <nav>
                 <ul>
                     <!--ITENS DO MENU-->
-                    <li>HOME</li>
+                    <li><a href="index.html">HOME</a></li>
 
-                    <li>QUEM SOMOS</li>
+                    <li> QUEM SOMOS</li>
 
-                    <li>PRODUTOS</li>
+                    <Li><a href="produtos.html">PRODUTOS</a> </Li>
 
-                    <li>CONTATO</li>
+                    <li> CONTATO</li>
                     
                 </ul>
             </nav>
@@ -36,20 +46,23 @@
             </div>
             <!--SOBRE NÓS (HISTÓRIA E IMAGEM)-->
             <section class="titulo_sobrenos">
-                <h2 title="img_sobrenos">Nossa História: De Pai pra Filho</h2>
+                <h2 class="titulo_principal">Nossa História: De Pai pra Filho</h2>
                 <img src="img/paiefilho.jpeg" class="img_sobrenos"/> 
+
                 <!--essa de cima é da imagem minha e do meu pai-->
                  
-                <p>  Nossa loja de pesca nasceu de uma paixão que atravessa gerações. Desde pequeno, Hélio acompanhava seu pai, Também Hélio, em pescarias memoráveis, onde aprendeu não apenas a arte de pescar, mas também o valor do tempo compartilhado entre pai e filho.<p>
+                    <div class="texto_historia">
+                        <p>  Nossa loja de pesca nasceu de uma paixão que atravessa gerações. Desde pequeno, Hélio acompanhava seu pai, Também Hélio, em pescarias memoráveis, onde aprendeu não apenas a arte de pescar, mas também o valor do tempo compartilhado entre pai e filho.<p>
 
-                </p>  Meu Pai sempre dizia que a pescaria ensina paciência, respeito à natureza e, acima de tudo, fortalece os laços familiares. Inspirado por essa herança, decidi então transformar esse amor pela pesca em um negócio, criando um espaço onde outros pais e filhos pudessem viver as mesmas experiências inesquecíveis.<p>
+                        </p>  Meu Pai sempre dizia que a pescaria ensina paciência, respeito à natureza e, acima de tudo, fortalece os laços familiares. Inspirado por essa herança, decidi então transformar esse amor pela pesca em um negócio, criando um espaço onde outros pais e filhos pudessem viver as mesmas experiências inesquecíveis.<p>
 
-                </p>Além da paixão pela pesca, o nome da loja carrega um significado especial. Tanto o pai quanto o filho compartilham o nome Hélio, e foi essa conexão que inspirou o nome da nossa loja: Hélio's Pesca. Um símbolo da continuidade de uma tradição e do amor pela pescaria passada de geração em geração.<p>
+                        </p>Além da paixão pela pesca, o nome da loja carrega um significado especial. Tanto o pai quanto o filho compartilham o nome Hélio, e foi essa conexão que inspirou o nome da nossa loja: Hélio's Pesca. Um símbolo da continuidade de uma tradição e do amor pela pescaria passada de geração em geração.<p>
 
-                </p>Hoje, nossa loja é mais do que um comércio; é um ponto de encontro para amantes da pesca, um lugar onde cada equipamento conta uma história e cada cliente faz parte da nossa família. Aqui, oferecemos os melhores produtos para tornar cada pescaria especial, seja para quem está começando ou para os mais experientes.<p>
+                        </p>Hoje, nossa loja é mais do que um comércio; é um ponto de encontro para amantes da pesca, um lugar onde cada equipamento conta uma história e cada cliente faz parte da nossa família. Aqui, oferecemos os melhores produtos para tornar cada pescaria especial, seja para quem está começando ou para os mais experientes.<p>
 
-                </p><strong>Seja bem-vindo à nossa loja, onde a tradição e a paixão pela pesca continuam a ser passadas de pai para filho!</strong></p>
-            
+                        </p><strong>Seja bem-vindo à nossa loja, onde a tradição e a paixão pela pesca continuam a ser passadas de pai para filho!</strong></p>
+                    </div>
+                    
             </section>
             <!--NOSSO ESTABELECIMENTO-->
             <section class="mapaGeral">
@@ -73,10 +86,15 @@
                 </div>
                 <!--Vídeo-->
                 <div class="video">
-                    <iframe width="300" height="400" src="https://www.youtube.com/embed/bHFdv5VyvlE" title="PESCANDO COM MIÇANGA  #pescaria #tambacu #pesqueiro #dicadepesca" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RNY7VIRFsh0?si=l5eZ-3RTWsis6AHW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </section>
         </main>
-    
+    <!--RODAPÉ DO SITE-->
+        <footer>
+            <img src="img/Pesca.png" alt="Helios pesca" class="logo_footer"/>
+            <p>Dúvidas: <a href="https://wa.me/5511914117321"><i class="fa fa-whatsapp "></a></i> (11) 91411-7031</p>
+            <p><a href="http://instagram.com/helio_"><i class="fa fa-instagram"></a></i> @heliospesca</p>
+        </footer>
     </body>
 </html>

@@ -2,7 +2,14 @@
 body {
     margin: 0;
     border: 0;
-    font-family: 'Cambria';
+    font-family: 'Montserrat', sans-serif;
+}
+body a{
+    color: white;
+    
+}
+body li{
+    text-decoration: underline;
 }
 .logo {
     width: 9%;
@@ -10,7 +17,7 @@ body {
 }
 /*Estilização do header do site*/
 header {
-    background-color: #5271ff;
+    background-color: #042138 ;
 }
 /*Estilização da DIV do header*/
 .divHeader {
@@ -41,22 +48,30 @@ nav li {
 .img_sobrenos {  
     width: 25%;
     float: left;
+    padding: 5;
     
-
 }
-.fundohistoria {
+.titulo_principal{
+    color: #03192b;
+    font-family: 'Montserrat', sans-serif;
+}
+.texto_historia {
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+}
+/*.fundohistoria {
     padding: 4;
-    background:linear-gradient(#ffedff,#e0a1ff,#b680f8,#8d5ff1,#633dea,#391ce2);
+    background:linear-gradient(#ffedff,#e8e6ff, #d0cdff, #b7b5ff, #9b9eff, #7c87ff, #5271ff);
     
-}
+}*/
 
 .titulo_sobrenos {
     margin: 50;
     text-align: center;
     width: 70%;
-    margin-left: 15%;
+    margin-left: 14%;
     font-size: 20;
-    font-family: 'Cambria';
+    
 }
 /*Estilização da sessão NOSSO ESTABELECIMENTO*/
 .mapaGeral {
@@ -66,19 +81,19 @@ nav li {
 .mapaGeral {
     text-align: center;
     text-decoration: underline;
-    font-family: 'Cambria';
-    color: red;
+    font-family: 'Montserrat', sans-serif;
+    color: #03192b;
     font-size: 20;
 }
 .nossosprodutos {
     padding: 1%;
     text-align: center;
-    color: #092442;
+    color: #03192b;
     font-size: 20;
 }
 .div_nossosprodutos{
     width: 70%;
-    margin-left: 10%;
+    margin-left: 7%;
 }
 .lista_nossosprodutos{
     width: 40%;
@@ -107,6 +122,31 @@ nav li {
 }
 .video{
     padding: 5% 0 0 0%;
+}
+/*Estilização do footer(rodapé)*/
+footer{
+    background: url("../img/rodape.png");/*imagem do rodapé*/
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+    padding: 0% 5% 1px 0%;
+    
+}
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+
+}
+footer i {
+    color: white;
+}
+.logo_footer {
+    width: 7%;
+    padding-left: 90%;
+    
 }
 
 
