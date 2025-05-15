@@ -1,0 +1,240 @@
+/*Estilização do BODY do site*/
+html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      width: 100%;
+    }
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.interface {
+    width: auto;/*largura maxima da página, auto ela se ajusta*/ 
+    margin: 0 75px 0 75px;/*função para centralizar os elementos na pagina*/
+}
+header{
+    width: 100%;/*largura do header 100%*/
+    padding: 25px 0;/*faz com que em cima e em baixo tenha 40 px de distancia para as bordas*/
+    background-color: #042138;
+    z-index: -2;
+}
+header .interface{/*esse comando faz com que seja estilizado apenas a class interface que está dentro do header, sem estilizar as outras*/
+    display: flex;/*essa função faz com que os elementos fiquem um do lado do outro*/
+    justify-content: space-between;/*faz com que os elementos fiquem distribuidos na tela dentro do header*/
+    align-items: center;/*alinha todos os itens ao centro*/
+}
+header .logo img{
+    max-width: 120px;
+}
+header .menu-desktop nav ul{
+    list-style: none;/*tirar a eltilização tipo lista que fica com aquelas bolinhas ao lado dos nomes*/
+}
+header .menu-desktop nav ul li{
+    display: inline-block;/*faz com que os elementos fiquem um ao lado do outro*/
+    margin: 0 40px;/*em cima e em baixo distancia de 0, porém tem uma distancia de 40px de um para o outro*/
+    font-size: 1.3em;
+}
+header .menu-desktop nav ul li a{
+    color: #fff;/*cor da fonte*/
+    text-decoration: none;/*retira o underline da fonte*/
+    display: inline-block;
+    transition: 0.2s;/*quando passo o cursor fica mais suave*/
+ 
+}
+.menu-desktop nav a:hover{/*hover seria a função para quando passar o mouse por cima acontecer algo*/
+    transform: scale(1.05);/*da o efeitio de zoom*/
+ 
+}
+header .btn-contato button{
+    width:130px;/*largura do botão*/
+    height: 40px;/*altura do botão*/
+    background-color: transparent;
+    color: #fff;
+    border: 0.5px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1em;
+}
+header .btn-contato button:hover{
+    background-color: #fff;
+    color: #042138;
+    font-weight: bold;
+}
+
+/*Banner do Site*/
+.banner {
+    width: 100%;
+    height: 80%;
+    background-image: url("../img/Banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.banner .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: rgb(102, 2, 2);
+    text-align: center;
+    justify-content: center;/*alinha a escrita ao centro*/
+    
+}
+@font-face {
+    font-family: "pesca";
+    src: url(../fontes/Poppins-Black.ttf);
+}
+.banner .txt-banner h1{
+    font-size: 4em;
+    font-weight: 1000;
+    color: #fff;
+    font-family: "pesca";
+    -webkit-text-stroke-width: 4.3px;/*comando para fazer uma borda na escrita*/
+    -webkit-text-stroke-color: #0b213b;/*cor da borda*/
+    letter-spacing: -3px;
+    line-height: 55px;
+    margin: 0px 0px 10px;
+}
+.banner .txt-banner h1 span{
+    display: block;/*pula oque está depois do span para proxima linha*/
+}
+.banner .txt-banner p{
+    color: #0b213b;
+    font-size: 1.5em;
+    margin: 10px 0 10px;
+    font-family: "pesca";
+    -webkit-text-stroke-width: 0.6px;/*comando para fazer uma borda na escrita*/
+    -webkit-text-stroke-color: #fff;/*cor da borda*/
+    font-weight: 800;
+}
+.botao_banner{
+    font-family: "pesca";
+    margin: 0px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    -webkit-text-stroke-width: 0.6px;/*comando para fazer uma borda na escrita*/
+    -webkit-text-stroke-color: #021a2f;/*cor da borda*/
+    background: linear-gradient(#021a2f,#156a93);
+    padding: 7px 65px;
+    border-radius: 8px;
+    border: 0.5px solid transparent;
+    cursor: pointer;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.10);
+    transition: 0.5s;
+}
+.botao_banner:hover{
+    background:linear-gradient(#156a93,#fff);
+    color: #021a2f;
+    font-weight: bold;
+    -webkit-text-stroke-width: 0.6px;/*comando para fazer uma borda na escrita*/
+    -webkit-text-stroke-color: #156a93;/*cor da borda*/
+}
+/*imagem minha e do meu pai + TEXTO*/
+.img_sobrenos {  
+    width: 25%;
+    float: left;
+    padding: 5;
+    
+}
+.titulo_principal{
+    color: #03192b;
+    font-family: 'Montserrat', sans-serif;
+}
+.texto_historia {
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+}
+.titulo_sobrenos {
+    margin: 50;
+    text-align: center;
+    width: 70%;
+    margin-left: 14%;
+    font-size: 20;
+    
+}
+/*Estilização da sessão NOSSO ESTABELECIMENTO*/
+.mapaGeral {
+    background:linear-gradient();
+   
+}
+.mapaGeral {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    color: #03192b;
+    font-size: 20;
+}
+.nossosprodutos {
+    padding: 1%;
+    text-align: center;
+    color: #03192b;
+    font-size: 20;
+}
+.div_nossosprodutos{
+    width: 70%;
+    margin-left: 7%;
+}
+.lista_nossosprodutos{
+    width: 40%;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    
+}
+.lista_nossosprodutos li{
+    line-height: 2;
+}
+.lista_nossosprodutos li:before{
+    content: "≈ ";
+}
+.img_Produtos{
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px white;
+    opacity: 1;
+    transition: 100ms;
+
+}
+.img_Produtos:hover{
+    opacity: 0.8;
+}
+.video{
+    padding: 40px 0 0 10px;
+    justify-content: center;
+}
+/*Estilização do footer(rodapé)*/
+footer{
+    background: url("../img/rodape.png");/*imagem do rodapé*/
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+    padding: 0px 5px 1px 0px;
+    
+}
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+
+}
+footer i {
+    color: white;
+}
+.logo_footer {
+    width: 7%;
+    padding-left: 90%;
+    
+}
+
+
+
+

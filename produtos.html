@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <link href="css/produtos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script>
+            alert('Bem vindo a nossa lista de Produtos!')//alerta quando entra no site 
+
+            dia = new Array("Domingo","Segunda-Feira","Terça-Feira","Quarta-Feira","Quinta-Feira","Sexta-Feira","Sábado");
+            mes = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro");
+            data = new Date
+
+            //POP-UP DE DETALHES DO PRODUTO
+            function abrirDetalhes(nome,imagem,descricao){
+                const url = `pop_produtos.html?nome=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(imagem)}&descricao=${encodeURIComponent(descricao)}`;//definimos uma variavel(url) para chamar o html pop
+                window.open(url, "_blank", "width=800,height=700");//blank seria para chamar uma nova tela, do lado o tamanho da tela que ira abrir por cima 
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="interface">
+            <!--Logotipo-->
+                <section class="logo">
+                    <img src="img/Pesca.png" title="PESCA">
+                </section>
+                    <section class="menu-desktop">
+                    <!--MENU-->
+                        <nav>
+                            <ul>
+                            <!--ITENS DO MENU-->
+                                <li><a href="index.html">HOME</a></li>
+
+                                <li><a href="#">QUEM SOMOS</a></li>
+
+                                <li><a href="produtos.html">PRODUTOS</a> </Li>
+                    
+                            </ul>
+                        </nav>
+                    </section>
+                                <section class="btn-contato">
+                            <a href="#"><button>CONTATO</button></a>
+                                </section>
+            </div>
+        </header>
+        <img src="img/FRETEGRÁTIS.png" title="Banner" class="Banner"/>
+        <main>
+            <section class="fundohistoria"></section>
+            <section class="titulo_produtos">
+                <h2 class="titulo_principal">Lista de Produtos</h2>
+                <div class="texto_produtos">
+                    <p><strong>"Quem vive a verdadeira paixão pela pesca sabe: escolher produtos de qualidade não é luxo, é necessidade. Seja a resistência de um bom equipamento, a precisão de um acessório ou a eficiência da isca ideal — cada detalhe faz a diferença entre um dia comum e uma grande pescaria. Invista no que realmente importa e garanta momentos inesquecíveis à beira d’água."</strong></p>
+                </div>
+            <p>
+                <script>
+                    document.write(dia[data.getDay()] +" , "+ data.getDate() +" de "+ mes[data.getMonth()] +" , "+ data.getFullYear());
+                </script>
+            </p>
+            </section>
+            <!--PRODUTOS DO SITE-->
+            <div class="container">
+                <div class="card" onclick="abrirDetalhes('Isca Nelson Nakamura Zig Zarinha','img/produtos/produtos1.jpg','Descrição da isca')">
+                    <img src="img/produtos/produtos1.jpg" alt="Produto 1">
+                        <h2>Isca Nelson Nakamura Zig Zarinha 90</h2>
+                        <p>Tamanho: 9cm</p>
+                        <p>Peso: 12gr</p>
+                        <span class="preco">R$ 37,90/cada</span>
+            </div>
+                <div class="card" onclick="abrirDetalhes('Isca OCL Lures Baca Popper 75 by Fábio Baca','img/produtos/produtos2.jpg','Descrição da isca')">
+                    <img src="img/produtos/produtos2.jpg" alt="Produto 2">
+                        <h2>Isca OCL Lures Baca Popper 75 by Fábio Baca</h2>
+                        <p>Tamanho: 7,5 cm</p>
+                        <p>Peso: +/- 13gr</p>
+                        <span class="preco">R$ 58,40/cada</span>
+                </div>
+                <div class="card" onclick="abrirDetalhes('Isca Marine Sports Brava 77','img/produtos/produtos3.jpg','Descrição do Produto')">
+                    <img src="img/produtos/produtos3.jpg" alt="Produto 3">
+                        <h2>Isca Marine Sports Brava 77</h2>
+                        <p>Tamanho: 7,7 cm</p>
+                        <p>7,2gr</p>
+                        <span class="preco">R$ 41,39/cada</span>
+                </div>
+                <div class="card" onclick="abrirDetalhes('Isca Rebel Jumpin Minnow T20','img/produtos/produtos4.jpg','Descrição do Produto')">
+                    <img src="img/produtos/produtos4.jpg" alt="Produto 4">
+                        <h2>Isca Rebel Jumpin Minnow T20</h2>
+                        <p>Tamanho: 11,4 cm</p>
+                        <p>Peso: 23gr</p>
+                        <span class="preco">R$ 80,99/cada</span>
+                </div>
+                <div class="card" onclick="abrirDetalhes('Carretilha Marine Sports Titan Pro 2 12000','img/produtos/produtos5.jpg','Descrição do Produto')">
+                    <img src="img/produtos/produtos5.jpg" alt="Produto 5">
+                        <h2>Carretilha Marine Sports Titan Pro 2 12000</h2>
+                        <p>Carretel de alumínio</p>
+                        <p>Drag máximo (freio): 5,5kg</p>
+                        <span class="preco">R$ 553,49/cada</span>
+                </div>
+                <div class="card" onclick="abrirDetalhes('Carretilha Maruri Juice JU7 - Pink','img/produtos/produtos6.jpg','Descrição do Produto')">
+                    <img src="img/produtos/produtos6.jpg" alt="Produto 6">
+                        <h2>Carretilha Maruri Juice JU7 - Pink</h2>
+                        <p>Corpo em grafite</p>
+                        <p>Drag máximo (freio): 5kg</p>
+                        <span class="preco">R$ 321,29/cada</span>
+                </div>
+                <div class="card" onclick="abrirDetalhes('Carretilha Albatroz Alpha 60','img/produtos/produtos7.jpg','Descrição do Produto')">
+                    <img src="img/produtos/produtos7.jpg" alt="Produto 7">
+                        <h2>Carretilha Albatroz Alpha 60</h2>
+                        <p>Carretel de Alumínio Anodizado</p>
+                        <p>Sistema On/Off Bait Clicker</p>
+                        <span class="preco">R$ 433,12/cada</span>
+                </div>
+                <div class="card" onclick="abrirDetalhes('Carretilha Maruri Robust 10','img/produtos/produtos8.jpg','Descrição do Produto')">
+                    <img src="img/produtos/produtos8.jpg" alt="Produto 8">
+                        <h2>Carretilha Maruri Robust 10</h2>
+                        <p>Carretel de alumínio</p>
+                        <p>Drag máximo (freio): 5kg</p>
+                        <span class="preco">R$ 593,99/cada</span>
+                </div>
+        </div>
+
+        </main>
+        <footer>
+            <img src="img/Pesca.png" alt="Helios pesca" class="logo_footer"/>
+            <p>Dúvidas: <a href="https://wa.me/5511914117321"><i class="fa fa-whatsapp "></a></i> (11) 91411-7031</p>
+            <p><a href="http://instagram.com/helio_"><i class="fa fa-instagram"></a></i> @heliospesca</p>
+        </footer>      
+    </body>
+        
+        
+</html>

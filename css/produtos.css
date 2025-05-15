@@ -1,0 +1,151 @@
+/*cabeçalho do site*/
+html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+}
+.interface {
+    width: auto;/*largura maxima da página, auto ela se ajusta*/ 
+    margin: 0 75px 0 75px;/*função para centralizar os elementos na pagina*/
+}
+header{
+    width: 100%;/*largura do header 100%*/
+    padding: 25px 0;/*faz com que em cima e em baixo tenha 40 px de distancia para as bordas*/
+    background-color: #042138;
+    z-index: -2;
+}
+header .interface{/*esse comando faz com que seja estilizado apenas a class interface que está dentro do header, sem estilizar as outras*/
+    display: flex;/*essa função faz com que os elementos fiquem um do lado do outro*/
+    justify-content: space-between;/*faz com que os elementos fiquem distribuidos na tela dentro do header*/
+    align-items: center;/*alinha todos os itens ao centro*/
+}
+header .logo img{
+    max-width: 120px;
+}
+header .menu-desktop nav ul{
+    list-style: none;/*tirar a eltilização tipo lista que fica com aquelas bolinhas ao lado dos nomes*/
+}
+header .menu-desktop nav ul li{
+    display: inline-block;/*faz com que os elementos fiquem um ao lado do outro*/
+    margin: 0 40px;/*em cima e em baixo distancia de 0, porém tem uma distancia de 40px de um para o outro*/
+    font-size: 1.3em;
+}
+header .menu-desktop nav ul li a{
+    color: #fff;/*cor da fonte*/
+    text-decoration: none;/*retira o underline da fonte*/
+    display: inline-block;
+    transition: 0.2s;/*quando passo o cursor fica mais suave*/
+ 
+}
+.menu-desktop nav a:hover{/*hover seria a função para quando passar o mouse por cima acontecer algo*/
+    transform: scale(1.05);/*da o efeitio de zoom*/
+ 
+}
+header .btn-contato button{
+    width:130px;/*largura do botão*/
+    height: 40px;/*altura do botão*/
+    background-color: transparent;
+    color: #fff;
+    border: 0.5px solid white;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1em;
+}
+header .btn-contato button:hover{
+    background-color: #fff;
+    color: #042138;
+    font-weight: bold;
+}
+
+/*cabeçalho do site acima #042138 */
+.titulo_produtos{
+    color: #01101c;
+    margin: 50;
+    text-align: center;
+    width: 70%;
+    margin-left: 14%;
+    font-size: 20;
+    font-family: 'Cambria';
+}
+.texto_produtos{
+    font-family: "Open Sans", sans-serif;
+    color: #01101c;
+}
+/*Banner Frete Grátis*/
+.banner {
+    width: 100%;
+    height: 370;
+    object-fit: cover;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.card{
+    background: #fff;
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,4);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card img{
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card h2{
+    margin: 10px 0;
+}
+.preco{
+    font-size: 18px;
+    font-weight: bold;
+    color: #1465bb;
+}
+/*---------------------*/
+/*rodapé do site*/
+footer{
+    background: url("../img/rodape.png");/*imagem do rodapé*/
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+    padding: 0% 5% 1px 0%;
+    
+}
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+
+}
+footer i {
+    color: white;
+}
+.logo_footer {
+    width: 7%;
+    padding-left: 90%;
+    
+}
+/*rodapé do site acima*/
