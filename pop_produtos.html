@@ -1,12 +1,13 @@
 <html>
     <head>
+        <link href="css/POP.css" rel="stylesheet">
         <title>Helio's Pesca</title>
         <body>
             <main>
-                <div>
+                <div class="pop">
                     <h1 id="nome-produto">TITULO</h1>
                     <img id="imagem-produto" src=""/>
-                    <p id="descricao-produto">Descrição</p>
+                    <p id="descricao-produto"></p>
                     <!--Captura as informações do produto-->
                     <script>
                         function getParametro(dado){
@@ -17,7 +18,8 @@
                         //Preenche na página as informações recebidas
                         document.getElementById("nome-produto").textContent = getParametro("nome");
                         document.getElementById("imagem-produto").src = getParametro("imagem");
-                        ocument.getElementById("descricao-produto").textContent = getParametro("descricao");
+                        document.getElementById("descricao-produto").innerHTML = getParametro("descricao");
+                        
                     </script>
                 </div>
             </main>

@@ -15,7 +15,7 @@
             //POP-UP DE DETALHES DO PRODUTO
             function abrirDetalhes(nome,imagem,descricao){
                 const url = `pop_produtos.html?nome=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(imagem)}&descricao=${encodeURIComponent(descricao)}`;//definimos uma variavel(url) para chamar o html pop
-                window.open(url, "_blank", "width=800,height=700");//blank seria para chamar uma nova tela, do lado o tamanho da tela que ira abrir por cima 
+                window.open(url, '_blank', "width=600,height=500");//blank seria para chamar uma nova tela, do lado o tamanho da tela que ira abrir por cima 
             }
 
 
@@ -62,63 +62,72 @@
             </p>
             </section>
             <!--PRODUTOS DO SITE-->
+            
             <div class="container">
-                <div class="card" onclick="abrirDetalhes('Isca Nelson Nakamura Zig Zarinha','img/produtos/produtos1.jpg','Descrição da isca')">
-                    <img src="img/produtos/produtos1.jpg" alt="Produto 1">
+                
+                <script>
+                    desciscaNelson="A Isca Nelson Nakamura Zig Zarinha 90 é uma isca de superfície com ação Zara em 'Z', mais conhecida como ação em Zig Zag."
+                                    
+                </script>
+                <div class="card" onclick="abrirDetalhes('Isca Nelson Nakamura Zig Zarinha','img/produtos/produtos1.png',desciscaNelson)">
+                    <img src="img/produtos/produtos1.png" alt="Produto 1">
                         <h2>Isca Nelson Nakamura Zig Zarinha 90</h2>
                         <p>Tamanho: 9cm</p>
                         <p>Peso: 12gr</p>
                         <span class="preco">R$ 37,90/cada</span>
             </div>
-                <div class="card" onclick="abrirDetalhes('Isca OCL Lures Baca Popper 75 by Fábio Baca','img/produtos/produtos2.jpg','Descrição da isca')">
-                    <img src="img/produtos/produtos2.jpg" alt="Produto 2">
+                
+                <div class="card" onclick="abrirDetalhes('Isca OCL Lures Baca Popper 75 by Fábio Baca','img/produtos/produtos2.png','Descrição da isca')">
+                    <img src="img/produtos/produtos2.png" alt="Produto 2">
                         <h2>Isca OCL Lures Baca Popper 75 by Fábio Baca</h2>
                         <p>Tamanho: 7,5 cm</p>
                         <p>Peso: +/- 13gr</p>
                         <span class="preco">R$ 58,40/cada</span>
                 </div>
-                <div class="card" onclick="abrirDetalhes('Isca Marine Sports Brava 77','img/produtos/produtos3.jpg','Descrição do Produto')">
-                    <img src="img/produtos/produtos3.jpg" alt="Produto 3">
+                <div class="card" onclick="abrirDetalhes('Isca Marine Sports Brava 77','img/produtos/produtos3.png','Descrição do Produto')">
+                    <img src="img/produtos/produtos3.png" alt="Produto 3">
                         <h2>Isca Marine Sports Brava 77</h2>
                         <p>Tamanho: 7,7 cm</p>
                         <p>7,2gr</p>
                         <span class="preco">R$ 41,39/cada</span>
                 </div>
-                <div class="card" onclick="abrirDetalhes('Isca Rebel Jumpin Minnow T20','img/produtos/produtos4.jpg','Descrição do Produto')">
-                    <img src="img/produtos/produtos4.jpg" alt="Produto 4">
+                <div class="card" onclick="abrirDetalhes('Isca Rebel Jumpin Minnow T20','img/produtos/produtos4.png','Descrição do Produto')">
+                    <img src="img/produtos/produtos4.png" alt="Produto 4">
                         <h2>Isca Rebel Jumpin Minnow T20</h2>
                         <p>Tamanho: 11,4 cm</p>
                         <p>Peso: 23gr</p>
                         <span class="preco">R$ 80,99/cada</span>
                 </div>
-                <div class="card" onclick="abrirDetalhes('Carretilha Marine Sports Titan Pro 2 12000','img/produtos/produtos5.jpg','Descrição do Produto')">
-                    <img src="img/produtos/produtos5.jpg" alt="Produto 5">
+                <div class="card" onclick="abrirDetalhes('Carretilha Marine Sports Titan Pro 2 12000','img/produtos/produtos5.png','Descrição do Produto')">
+                    <img src="img/produtos/produtos5.png" alt="Produto 5">
                         <h2>Carretilha Marine Sports Titan Pro 2 12000</h2>
                         <p>Carretel de alumínio</p>
                         <p>Drag máximo (freio): 5,5kg</p>
                         <span class="preco">R$ 553,49/cada</span>
                 </div>
-                <div class="card" onclick="abrirDetalhes('Carretilha Maruri Juice JU7 - Pink','img/produtos/produtos6.jpg','Descrição do Produto')">
-                    <img src="img/produtos/produtos6.jpg" alt="Produto 6">
+                <div class="card" onclick="abrirDetalhes('Carretilha Maruri Juice JU7 - Pink','img/produtos/produtos6.png','Descrição do Produto')">
+                    <img src="img/produtos/produtos6.png" alt="Produto 6">
                         <h2>Carretilha Maruri Juice JU7 - Pink</h2>
                         <p>Corpo em grafite</p>
                         <p>Drag máximo (freio): 5kg</p>
                         <span class="preco">R$ 321,29/cada</span>
                 </div>
-                <div class="card" onclick="abrirDetalhes('Carretilha Albatroz Alpha 60','img/produtos/produtos7.jpg','Descrição do Produto')">
-                    <img src="img/produtos/produtos7.jpg" alt="Produto 7">
+                <div class="card" onclick="abrirDetalhes('Carretilha Albatroz Alpha 60','img/produtos/produtos7.png','Descrição do Produto')">
+                    <img src="img/produtos/produtos7.png" alt="Produto 7">
                         <h2>Carretilha Albatroz Alpha 60</h2>
                         <p>Carretel de Alumínio Anodizado</p>
                         <p>Sistema On/Off Bait Clicker</p>
                         <span class="preco">R$ 433,12/cada</span>
                 </div>
-                <div class="card" onclick="abrirDetalhes('Carretilha Maruri Robust 10','img/produtos/produtos8.jpg','Descrição do Produto')">
-                    <img src="img/produtos/produtos8.jpg" alt="Produto 8">
+                <div class="card" onclick="abrirDetalhes('Carretilha Maruri Robust 10','img/produtos/produtos8.png','Descrição do Produto')">
+                    <img src="img/produtos/produtos8.png" alt="Produto 8">
                         <h2>Carretilha Maruri Robust 10</h2>
                         <p>Carretel de alumínio</p>
                         <p>Drag máximo (freio): 5kg</p>
                         <span class="preco">R$ 593,99/cada</span>
                 </div>
+
+                
         </div>
 
         </main>
