@@ -161,7 +161,7 @@ header .btn-contato button:hover{
 /*Estilização da sessão NOSSO ESTABELECIMENTO*/
 .mapaGeral {
     background:linear-gradient();
-   
+    
 }
 .mapaGeral {
     text-align: center;
@@ -169,6 +169,7 @@ header .btn-contato button:hover{
     font-family: 'Montserrat', sans-serif;
     color: #03192b;
     font-size: 20;
+    
 }
 .nossosprodutos {
     padding: 1%;
@@ -186,7 +187,7 @@ header .btn-contato button:hover{
     display: inline-block;
     vertical-align: top;
     list-style: none;
-    
+    font-weight: 700;
 }
 .lista_nossosprodutos li{
     line-height: 2;

@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <!-- esse estilo seria para aumentar ou diminuir a logo puxando do estilos.css -->
+        <link href="css/contato.css" rel="stylesheet">  
+        <!--Biblioteca para chamar o símbolo do whats-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
+        <title>Helio's Pesca</title>
+    </head>
+    <body>
+        
+        <header>
+            <div class="interface">
+            <!--Logotipo-->
+                <section class="logo">
+                    <img src="img/Pesca.png" title="PESCA">
+                </section>
+                    <section class="menu-desktop">
+                    <!--MENU-->
+                        <nav>
+                            <ul>
+                            <!--ITENS DO MENU-->
+                                <li><a href="index.html">HOME</a></li>
+
+                                <li><a href="#">QUEM SOMOS</a></li>
+
+                                <li><a href="produtos.html">PRODUTOS</a> </Li>
+                    
+                            </ul>
+                        </nav>
+                    </section>
+                                <section class="btn-contato">
+                            <a href="#"><button>CONTATO</button></a>
+                                </section>
+            </div>
+        </header>
+        <!--FORMULARIO SITE-->
+        <main>
+            <div class="interface">
+            <!--SOBRE NÓS (HISTÓRIA E IMAGEM)-->
+                <section class="titulo_sobrenos">
+                    <h2 class="titulo_principal">Fale Conosco!</h2>
+                    <p class="texto-contato">
+                        Tem alguma dúvida, sugestão ou quer saber mais sobre nossos produtos de pesca?
+Preencha o formulário abaixo que retornaremos o mais breve possível.</p>
+<p>Aqui na 2 Helio's Pesca, nossa missão é te ajudar a fisgar não só grandes peixes, mas também grandes momentos.
+                    </p>
+                </section>
+                <form id="frmContato">
+                    <fieldset>
+                        <legend>Dados Pessoais:</legend>
+                        <label>Nome Completo</label>
+                        <input type="text" id="nome" required>
+
+                        <label>E-mail:</label>
+                        <input type="text" id="E-mail" required placeholder="seuemail@gmail.com">
+
+                        <label>Telefone:</label>
+                        <input type="tel" id="Telefone" required placeholder="(_) 91234-5678">
+
+                        <label>Mensagem</label>
+                        <textarea cols="70" rows="10"></textarea>
+
+                        <label> Como prefere o nosso contato?
+                            <input type="radio" name="contato">E-mail
+                            <input type="radio" name="contato">Telefone
+                            <input type="radio" name="contato">Whatsapp
+                        </label>
+
+                        <label>Qual o motivo do seu contato?</label>
+                        <select>
+                            <option>Selecione</option>
+                            <option>Dúvida</option>
+                            <option>Sugestão</option>
+                            <option>Elogio</option>
+                            <option>Reclamação</option>
+                        </select>
+                    </fieldset>
+                    <label><input type="checkbox">Gostaria de Receber nosso e-mail?</label>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </main>
