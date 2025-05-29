@@ -1,17 +1,9 @@
-html, body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      width: 100%;
-    }
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(../img/fundo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+    background-color: #e9eff1;
+    margin: 0;
+    padding: 0;
 }
-
 .interface {
     width: auto;/*largura maxima da página, auto ela se ajusta*/ 
     margin: 0 75px 0 75px;/*função para centralizar os elementos na pagina*/
@@ -67,16 +59,155 @@ header .btn-contato button:hover{
 .titulo_principal{
     color: #03192b;
     font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1em;
 }
-.texto_historia {
-    text-align: justify;
-    font-family: "Open Sans", sans-serif;
-}
-.titulo_sobrenos {
+
+.titulo_sobrenos li{
     margin: 50;
     text-align: center;
     width: 70%;
     margin-left: 14%;
-    font-size: 20;
+    font-size: 2.5em;
+    
+}
+.texto-contato{
+    text-align: center;
+    line-height: 1.8;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #03192b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== Container do Formulário ===== */
+.container-contato {
+    background-color: white;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== Título ===== */
+.container-contato h1 {
+    text-align: center;
+    color: #042138;
+    margin-bottom: 20px;
+}
+
+/* ===== Formulário ===== */
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 22px;
+    color: #042138;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* ===== Labels ===== */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #042138;
+}
+
+/* ===== Inputs, Selects e Textarea ===== */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #cfd8dc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #156a93;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(21, 106, 147, 0.5);
+}
+
+/* ===== Checkboxes e Radio Buttons ===== */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* ===== Botão Enviar ===== */
+input[type="submit"] {
+    background-color: #156a93;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0b4561;
+    transform: scale(1.05);
+}
+
+/* ===== Mensagem de Retorno ===== */
+#retorno {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*Estilização do footer(rodapé)*/
+footer{
+    background: url("../img/rodape.png");/*imagem do rodapé*/
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: darken;
+    padding: 0px 5px 1px 0px;
+    
+}
+footer p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+
+}
+footer i {
+    color: white;
+}
+.logo_footer {
+    width: 7%;
+    padding-left: 90%;
     
 }

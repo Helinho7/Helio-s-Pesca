@@ -43,30 +43,33 @@
         </header>
         <!--FORMULARIO SITE-->
         <main>
-            <div class="interface">
-            <!--SOBRE NÓS (HISTÓRIA E IMAGEM)-->
-                <section class="titulo_sobrenos">
-                    <h2 class="titulo_principal">Fale Conosco!</h2>
-                    <p class="texto-contato">
-                        Tem alguma dúvida, sugestão ou quer saber mais sobre nossos produtos de pesca?
-Preencha o formulário abaixo que retornaremos o mais breve possível.</p>
-<p>Aqui na 2 Helio's Pesca, nossa missão é te ajudar a fisgar não só grandes peixes, mas também grandes momentos.
+            <ul class="titulo_sobrenos">
+                    <li class="titulo_principal">Fale Conosco!</li>
+            </ul>
+            <div id="formRetorno" class="divRetorno">
+                <p id="textoRetorno" class="texto-contato"></p>
+            </div>
+            <div id="formulario">
+                <p class="texto-contato">
+                        Tem alguma dúvida, sugestão ou quer saber mais sobre nossos produtos de pesca?<br>
+Preencha o formulário abaixo que retornaremos o mais breve possível.<br>
+Aqui na 2 Helio's Pesca, nossa missão é te ajudar a fisgar não só grandes peixes, mas também grandes momentos.
                     </p>
                 </section>
                 <form id="frmContato">
                     <fieldset>
                         <legend>Dados Pessoais:</legend>
                         <label>Nome Completo</label>
-                        <input type="text" id="nome" required>
+                        <input type="text" id="nomesobrenome" class="input-padrao" required>
 
                         <label>E-mail:</label>
-                        <input type="text" id="E-mail" required placeholder="seuemail@gmail.com">
+                        <input type="text" id="email" class="input-padrao" required placeholder="seuemail@gmail.com">
 
                         <label>Telefone:</label>
-                        <input type="tel" id="Telefone" required placeholder="(_) 91234-5678">
+                        <input type="tel" id="telefone" class="input-padrao" required placeholder="(_) 91234-5678">
 
                         <label>Mensagem</label>
-                        <textarea cols="70" rows="10"></textarea>
+                        <textarea cols="70" rows="10" class="input-padrao" required></textarea>
 
                         <label> Como prefere o nosso contato?
                             <input type="radio" name="contato">E-mail
@@ -83,8 +86,17 @@ Preencha o formulário abaixo que retornaremos o mais breve possível.</p>
                             <option>Reclamação</option>
                         </select>
                     </fieldset>
-                    <label><input type="checkbox">Gostaria de Receber nosso e-mail?</label>
-                    <input type="submit" value="Enviar">
+                    <label><input type="checkbox" class="chk" >Gostaria de Receber nosso e-mail?</label>
+                    <input type="submit" id="enviar" value="Enviar Formulário" class="enviar">
                 </form>
             </div>
         </main>
+        <!--RODAPÉ DO SITE-->
+        <footer>
+            <img src="img/Pesca.png" alt="Helios pesca" class="logo_footer"/>
+            <p>Dúvidas: <a href="https://wa.me/5511914117321"><i class="fa fa-whatsapp "></a></i> (11) 91411-7031</p>
+            <p><a href="http://instagram.com/helio_nf"><i class="fa fa-instagram"></a></i> @heliospesca</p>
+        </footer>
+        <script src="js/forms.js"></script>
+        </body>
+</html>
