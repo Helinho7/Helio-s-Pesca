@@ -126,6 +126,12 @@ header .btn-contato button:hover {
     color: #1465bb;
 }
 /*---------------------*/
+main script p{
+    color: #48ff00 ;
+}
+
+
+
 /*rodapé do site*/
 footer{
     background: url("../img/rodape.png");/*imagem do rodapé*/
