@@ -37,7 +37,7 @@ header .menu-desktop nav ul{
 header .menu-desktop nav ul li{
     display: inline-block;/*faz com que os elementos fiquem um ao lado do outro*/
     margin: 0 40px;/*em cima e em baixo distancia de 0, porém tem uma distancia de 40px de um para o outro*/
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 header .menu-desktop nav ul li a{
     color: #fff;/*cor da fonte*/
@@ -50,17 +50,19 @@ header .menu-desktop nav ul li a{
     transform: scale(1.05);/*da o efeitio de zoom*/
  
 }
-header .btn-contato button{
-    width:130px;/*largura do botão*/
-    height: 40px;/*altura do botão*/
+header .btn-contato button {
+    width: 130px;
+    height: 40px;
     background-color: transparent;
     color: #fff;
-    border: 0.5px solid white;
+    border: 1px solid white;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.3s;
     font-size: 1em;
+    border-radius: 8px;
 }
-header .btn-contato button:hover{
+
+header .btn-contato button:hover {
     background-color: #fff;
     color: #042138;
     font-weight: bold;
