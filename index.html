@@ -3,6 +3,7 @@
         <!-- esse estilo seria para aumentar ou diminuir a logo puxando do estilos.css -->
         <link href="css/estilos.css" rel="stylesheet">  
         <!--Biblioteca para chamar o símbolo do whats-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,32 +14,49 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
         <title>Helio's Pesca</title>
+        <link rel="icon" href="img/fish.ico" type="image/x-icon">
     </head>
     <body>
         
-        <header>
-            <div class="interface">
-            <!--Logotipo-->
-                <section class="logo">
-                    <img src="img/Pesca.png" title="PESCA">
-                </section>
-                    <section class="menu-desktop">
-                    <!--MENU-->
-                        <nav>
-                            <ul>
-                            <!--ITENS DO MENU-->
-                                <li><a href="index.html">HOME</a></li>
+<header>
+    <div class="interface">
 
-                                <li><a href="produtos.html">PRODUTOS</a> </Li>
-                    
-                            </ul>
-                        </nav>
-                    </section>
-                                <section class="btn-contato">
-                            <a href="contato.html"><button>CONTATO</button></a>
-                                </section>
-            </div>
-        </header>
+        <!-- LOGO -->
+        <section class="logo">
+            <img src="img/Pesca.png" title="PESCA">
+        </section>
+
+        <!-- MENU DESKTOP -->
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="produtos.html">PRODUTOS</a></li>
+                <li><a href="encomendas.html">ENCOMENDAS</a></li>
+            </ul>
+        </nav>
+
+        <!-- BOTÃO CONTATO -->
+        <section class="btn-contato">
+            <a href="contato.html"><button>CONTATO</button></a>
+        </section>
+
+        <!-- ÍCONE DO MENU MOBILE -->
+        <div class="menu-mobile-icon" id="btn-mobile">
+            <i class="bi bi-list"></i>
+        </div>
+
+    </div>
+
+    <!-- MENU MOBILE -->
+    <nav class="menu-mobile" id="menu-mobile">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="produtos.html">PRODUTOS</a></li>
+            <li><a href="encomendas.html">ENCOMENDAS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+    </nav>
+</header>
 
 
         <div class="Banner">
@@ -107,5 +125,7 @@
             <p>Dúvidas: <a href="https://wa.me/5511914117321"><i class="fa fa-whatsapp "></a></i> (11) 91411-7031</p>
             <p><a href="http://instagram.com/helio_nf"><i class="fa fa-instagram"></a></i> @heliospesca</p>
         </footer>
+
+        <script src="menu-mobile.js"></script>
     </body>
 </html>

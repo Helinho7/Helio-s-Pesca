@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <!-- esse estilo seria para aumentar ou diminuir a logo puxando do estilos.css -->
+        <link href="css/encomendas.css" rel="stylesheet">  
+        <!--Biblioteca para chamar o símbolo do whats-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
+        <title>Helio's Pesca</title>
+    </head>
+    <body>
+        
+        <header>
+            <div class="interface">
+            <!--Logotipo-->
+                <section class="logo">
+                    <img src="img/Pesca.png" title="PESCA">
+                </section>
+                    <section class="menu-desktop">
+                    <!--MENU-->
+                        <nav>
+                            <ul>
+                            <!--ITENS DO MENU-->
+                                <li><a href="index.html">HOME</a></li>
+
+                                <li><a href="produtos.html">PRODUTOS</a> </Li>
+
+                                <li><a href="encomendas.html">ENCOMENDAS</a> </Li>
+                    
+                            </ul>
+                        </nav>
+                    </section>
+                                <section class="btn-contato">
+                            <a href="contato.html"><button>CONTATO</button></a>
+                                </section>
+            </div>
+        </header>
+        <main>
+            <ul class="titulo_sobrenos">
+                    <li class="titulo_principal">🎣 Encomendas 🎣</li>
+            </ul>
+            <label class="buscar-txt">BUSCAR:</label>
+            <input type="text" name="Buscar" id="buscar"
+            placeholder="Digite o nome do cliente"/>
+
+
+
+
+            <!--Tabela de Encomendas-->
+            <table>
+                <!--Cabeçalho da tabela-->
+                <thead>
+                    <!--Linha-->
+                    <tr>
+                        <!--Coluna do cabeçalho da tabela-->
+                        <th>Nome</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Valor Unitário</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody class="tabela-clientes">
+                    <tr class="cliente">
+                        <td class="nome">Carlos</td>
+                        <td class="produto">Isca Nelson Nakamura Zig Zarinha 90</td>
+                        <td class="qtde">2</td>
+                        <td class="unitario">37.90</td>
+                        <td class="total"></td>
+                    </tr>
+                    <tr class="cliente">
+                        <td class="nome">Amando</td>
+                        <td class="produto">Isca OCL Lures Baca Popper 75 by Fábio Baca</td>
+                        <td class="qtde">5</td>
+                        <td class="unitario">58.4</td>
+                        <td class="total"></td>
+                    </tr>
+                    <tr class="cliente">
+                        <td class="nome">João</td>
+                        <td class="produto">Carretilha Marine Sports Titan Pro 2 12000</td>
+                        <td class="qtde">1</td>
+                        <td class="unitario">553.4</td>
+                        <td class="total"></td>
+                    </tr>
+                    <tr class="cliente">
+                        <td class="nome">Rosana</td>
+                        <td class="produto">Carretilha Maruri Juice JU7 - Pink</td>
+                        <td class="qtde">R</td>
+                        <td class="unitario">321.49</td>
+                        <td class="total"></td>
+                    </tr>
+                    <tr class="cliente">
+                        <td class="nome">Bruno</td>
+                        <td class="produto">Carretilha Albatroz Alpha 60</td>
+                        <td class="qtde">5</td>
+                        <td class="unitario">433,12</td>
+                        <td class="total"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" id="api-encomenda" value="Impotar API" class="enviar">
+
+            <ul class="titulo_sobrenos">
+                    <li class="titulo_principal">🎣 Adicionar Encomenda 🎣</li>
+            </ul>
+                <div id="formulario">
+            <form id="frmContato">
+                    <fieldset>
+                        <label>Nome Completo</label>
+                        <input type="text" id="nome" class="input-padrao" required placeholder="Digite o Nome do(a) cliente">
+
+                        <label>Qtde:</label>
+                        <input type="text" id="qtde" class="input-padrao" required placeholder="Digite a quantidade encomendada">
+
+                        <label>Produto:</label>
+                        <select id="produto">
+                            <option>Selecione uma opção</option>
+                            <option>Isca Nelson Nakamura Zig Zarinha 90</option>
+                            <option>Isca OCL Lures Baca Popper 75 by Fábio Baca</option>
+                            <option>Isca Marine Sports Brava 77</option>
+                            <option>Isca Rebel Jumpin Minnow T20</option>
+                            <option>Carretilha Marine Sports Titan Pro 2 12000</option>
+                            <option>Carretilha Maruri Juice JU7 - Pink</option>
+                            <option>Carretilha Albatroz Alpha 60</option>
+                            <option>Carretilha Maruri Robust 10</option>
+                        </select>
+                        
+                        <label>R$ Unitário:</label>
+                        <input type="text" id="unitario" class="input-padrao" required placeholder="Digite o valor unitário do Produto">
+                    
+                        <input type="submit" id="adicionar-encomenda" value="Adicionar" class="enviar">
+                        <!--<button id="adicionar-encomenda" class="enviar"></button>-->
+                    
+                    </fieldset>
+                </div>
+        </main>
+         <!--RODAPÉ DO SITE-->
+         <footer>
+            <img src="img/Pesca.png" alt="Helios pesca" class="logo_footer"/>
+            <p>Dúvidas: <a href="https://wa.me/5511914117321"><i class="fa fa-whatsapp "></a></i> (11) 91411-7031</p>
+            <p><a href="http://instagram.com/helio_nf"><i class="fa fa-instagram"></a></i> @heliospesca</p>
+        </footer>
+        <script src="encomendas.js"></script>
+        <script src="adiciona_encomenda.js"></script>
+        <script src="remove_encomenda.js"></script>
+        <script src="buscar_encomenda.js"></script>
+        <script src="api_encomenda.js"></script>
+    </body>
+</html>

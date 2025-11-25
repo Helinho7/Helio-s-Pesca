@@ -12,45 +12,55 @@ body {
     background-size: cover;
     min-height: 100vh;
 }
-
+/* -------- INTERFACE GERAL -------- */
 .interface {
-    width: auto;/*largura maxima da página, auto ela se ajusta*/ 
-    margin: 0 75px 0 75px;/*função para centralizar os elementos na pagina*/
+    width: auto;
+    margin: 0 75px;
 }
-header{
-    width: 100%;/*largura do header 100%*/
-    padding: 25px 0;/*faz com que em cima e em baixo tenha 40 px de distancia para as bordas*/
+
+/* -------- HEADER -------- */
+header {
+    width: 100%;
+    padding: 25px 0;
     background-color: #042138;
-    z-index: -2;
+    z-index: 10;
 }
-header .interface{/*esse comando faz com que seja estilizado apenas a class interface que está dentro do header, sem estilizar as outras*/
-    display: flex;/*essa função faz com que os elementos fiquem um do lado do outro*/
-    justify-content: space-between;/*faz com que os elementos fiquem distribuidos na tela dentro do header*/
-    align-items: center;/*alinha todos os itens ao centro*/
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-header .logo img{
+
+/* -------- LOGO -------- */
+header .logo img {
     max-width: 120px;
 }
-header .menu-desktop nav ul{
-    list-style: none;/*tirar a eltilização tipo lista que fica com aquelas bolinhas ao lado dos nomes*/
+
+/* -------- MENU DESKTOP -------- */
+.menu-desktop ul {
+    list-style: none;
 }
-header .menu-desktop nav ul li{
-    display: inline-block;/*faz com que os elementos fiquem um ao lado do outro*/
-    margin: 0 40px;/*em cima e em baixo distancia de 0, porém tem uma distancia de 40px de um para o outro*/
+
+.menu-desktop ul li {
+    display: inline-block;
+    margin: 0 40px;
     font-size: 1.5em;
 }
-header .menu-desktop nav ul li a{
-    color: #fff;/*cor da fonte*/
-    text-decoration: none;/*retira o underline da fonte*/
+
+.menu-desktop ul li a {
+    color: #fff;
+    text-decoration: none;
     display: inline-block;
-    transition: 0.2s;/*quando passo o cursor fica mais suave*/
- 
+    transition: 0.2s;
 }
-.menu-desktop nav a:hover{/*hover seria a função para quando passar o mouse por cima acontecer algo*/
-    transform: scale(1.05);/*da o efeitio de zoom*/
- 
+
+.menu-desktop ul li a:hover {
+    transform: scale(1.05);
 }
-header .btn-contato button {
+
+/* -------- BOTÃO CONTATO -------- */
+.btn-contato button {
     width: 130px;
     height: 40px;
     background-color: transparent;
@@ -62,12 +72,70 @@ header .btn-contato button {
     border-radius: 8px;
 }
 
-header .btn-contato button:hover {
+.btn-contato button:hover {
     background-color: #fff;
     color: #042138;
     font-weight: bold;
 }
 
+/* -------- MENU MOBILE ÍCONE -------- */
+.menu-mobile-icon {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+}
+
+/* -------- MENU MOBILE -------- */
+.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    background: #03192b;
+    padding: 20px 10px;
+    border-radius: 0 0 0 10px;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-mobile ul li {
+    margin-bottom: 15px;
+}
+
+.menu-mobile ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu-mobile ul li a:hover {
+    text-decoration: underline;
+}
+
+/* -------- RESPONSIVIDADE -------- */
+@media (max-width: 850px) {
+
+    /* esconde itens do desktop */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* mostra o ícone do mobile */
+    .menu-mobile-icon {
+        display: block;
+    }
+}
+@media (min-width: 851px) {
+    .menu-mobile {
+        display: none !important;
+    }
+}
 /*Banner do Site*/
 .banner {
     width: 100%;

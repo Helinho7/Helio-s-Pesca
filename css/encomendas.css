@@ -1,4 +1,3 @@
-/* ===== Reset e configurações gerais ===== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
 }
 
 /* ===== Interface/Header ===== */
@@ -98,7 +98,38 @@ header .btn-contato button:hover {
     color: #f0f0f0;
     margin: 20px;
 }
+/*ESITILIZAÇÃO TABELA DE ENCOMENDAS*/
+table{
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    table-layout: fixed;
+}
+th{
+    font-weight: bold;
+    background-color: #042138;
+    color: white;
+}
 
+td, th{
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Estilização das informações inválidas*/
+.info_invalida{
+    background-color: red;
+    color: white;
+}
+.info_invalida2{
+    background-color: white;
+    color:  red;
+}
+
+/*Estilização formulario de adição de encomendas*/
 /* ===== Container do Formulário ===== */
 #formulario {
     background: rgba(3, 25, 43, 0.4); /* Fundo azul escuro com transparência */
@@ -168,10 +199,10 @@ input[type="checkbox"] {
 }
 
 /* ===== Botão Enviar ===== */
-.enviar {
-    background-color: #00d5ff;
+.enviar{
+    background-color: #03192b;
+    border: 1px solid #fff;
     color: white;
-    border: none;
     padding: 12px 40px;
     border-radius: 10px;
     cursor: pointer;
@@ -182,29 +213,41 @@ input[type="checkbox"] {
 }
 
 .enviar:hover {
-    background-color: #03192b;
+    background-color: #00b0d3;
     transform: scale(1.05);
 }
-
-/* ===== Mensagem de Retorno ===== */
-.divRetorno {
-    background: rgba(21, 106, 147, 0.4);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+ /*ESTILIZAÇÃO DA EXCLUSÃO DA LINHA DA TABELA*/
+ .fadeOut{
+    opacity: 0;
+    transition: 1s;
+ }
+ 
+ /*ESTILIZAÇÃO DO CAMPO DE BUSCA*/
+ .buscar-txt{
+    font-size: 30px;
+    width: 100%;
     text-align: center;
-    display: none;
-}
+    margin: 25px 0;
+    position: relative;
+    color: #03192b;
+ }
+ #buscar{
+    align-items: center;
+    position: relative;
+    width: 60%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+    display: block;
+    margin: 0 auto;
+ }
 
-#textoRetorno {
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
+ /*Estilização para esconder quando Buscar*/
+.invisivel{
+    display: none;
 }
 
 /* ===== Footer ===== */
